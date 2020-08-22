@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import id.mentoring.kotlin2.R
 import id.mentoring.kotlin2.models.Hero
+import kotlinx.android.synthetic.main.item_hero.view.*
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
 
@@ -24,18 +25,19 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val hero = listHero[position]
-        Glide.with(holder.itemView.context)
-            .load(hero.photo)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.imgPhoto)
-        holder.tvName.text = hero.name
-        holder.tvDetail.text = hero.detail
+        holder.bind(hero)
     }
 
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
-        var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
+        fun bind(hero: Hero) {
+            Glide.with(itemView.context)
+                .load(hero.photo)
+                .apply(RequestOptions().override(55, 55))
+                .into(itemView.img_item_photo)
+            itemView.tv_item_name.text = hero.name
+            itemView.tv_item_detail.text = hero.detail
+
+        }
     }
 
 }
