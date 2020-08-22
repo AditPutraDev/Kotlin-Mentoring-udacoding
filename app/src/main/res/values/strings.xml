@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Kotlin2</string>
+    <string name="title">Udacoding Week 2</string>
+    <string name="name">Aditya Hermansyah Putra</string>
+    <string name="logo">logo</string>
+    <string name="login">Form Login</string>
+    <string name="form_login">Form Login</string>
+    <string name="calculator">Calculator</string>
+    <string name="rvView">Recycler View</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOGIN</string>
+    <string name="welcome">Welcome Back,\nExplorer</string>
+    <string name="heroes_name">heroes name</string>
+    <string name="detail">detail</string>
+    <string name="ce">CE</string>
+    <string name="back">BACK</string>
+    <string name="k_open">(</string>
+    <string name="k.close">)</string>
+    <string name="divider">/</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="multiplication">*</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="subtraction">-</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="addition">+</string>
+    <string name="zero">0</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+</resources>
